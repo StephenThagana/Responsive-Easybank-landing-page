@@ -1,0 +1,37 @@
+///////////////////////////////////////
+/// BASIC RESET
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  // 1rem = 10px
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 144rem;
+  padding: 0 7.2rem;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  gap: 3.2rem;
+}
+.grid-col--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-col--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-col--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-col--5 {
+  grid-template-columns: repeat(5, 1fr);
+}
