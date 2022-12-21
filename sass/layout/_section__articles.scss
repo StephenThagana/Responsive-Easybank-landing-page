@@ -1,3 +1,57 @@
 .section__articles {
   grid-column: center-start / center-end;
+  padding: 9.6rem 0;
 }
+
+// .article__box {
+// }
+.article__content {
+  padding: 2.2rem;
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.article__img-box {
+  flex: 0 0 40%;
+}
+.article {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  border-radius: 11px;
+  overflow: hidden;
+
+  &-img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
+  &-author {
+    font-size: 1.2rem;
+    color: var(--color-neutral-Grayish-Blue);
+  }
+  &-text {
+    color: var(--color-neutral-Grayish-Blue);
+    font-size: 1.3rem;
+    line-height: 1.8;
+  }
+}
+
+// <div class="article">
+// <img
+//   src="images/icon-online.svg"
+//   alt="article about currency"
+//   class="article-img"
+// />
+// <p class="article-author">By Claire Robinson</p>
+// <h3 class="heading-tertiary">
+//   Receive money in any currency with no fees
+// </h3>
+// <p class="artcle-text">
+//   The world is getting smaller and we’re becoming more mobile. So why
+//   should you be forced to only receive money in a single …
+// </p>
+// </div>
