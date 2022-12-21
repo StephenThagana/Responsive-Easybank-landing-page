@@ -13,12 +13,23 @@ html {
 }
 body {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 .container {
   max-width: 144rem;
-  padding: 0 7.2rem;
+  padding: 0 15rem;
   margin: 0 auto;
 }
+.main__grid {
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(14rem, 1fr) [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 14rem) [col-end]
+    )
+    [center-end] minmax(14rem, 1fr) [full-end];
+}
+
 .grid {
   display: grid;
   gap: 3.2rem;
@@ -35,3 +46,11 @@ body {
 .grid-col--5 {
   grid-template-columns: repeat(5, 1fr);
 }
+
+// display: grid;
+// grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+// grid-template-columns:
+//   [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr)
+//   [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+//   [center-end] minmax(6rem, 1fr)
+//   [full-end]; //max can be 14rem but never below the mincontent

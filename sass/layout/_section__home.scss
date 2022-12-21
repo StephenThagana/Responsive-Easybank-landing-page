@@ -1,0 +1,31 @@
+.section__home {
+  padding-top: 3rem;
+  grid-column: center-start / full-end;
+}
+.home {
+  &__description {
+    padding: 4.8rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3.2rem;
+
+    &-text {
+      font-size: 1.8rem;
+      color: var(--color-neutral-Grayish-Blue);
+    }
+  }
+  &__photo {
+    background-image: url(../../images/bg-intro-desktop.svg);
+    background-size: cover;
+    background-position: bottom;
+    margin: 0 -27rem 0 0;
+    overflow: hidden;
+  }
+}
+
+.home__img {
+  width: 60%;
+  margin: -10rem 0 0 14rem;
+}

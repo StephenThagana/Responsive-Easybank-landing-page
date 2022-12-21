@@ -1,0 +1,28 @@
+.btn__link:link,
+.btn__link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.5rem;
+  border-radius: 3.5rem;
+  padding: 0.8rem 3.2rem;
+  transition: all 0.3s;
+}
+.btn--full:link,
+.btn--full:visited {
+  background-image: linear-gradient(
+    to right,
+    var(--color-Lime-Green),
+    var(--color-Bright-Cyan)
+  );
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: red;
+  color: #ffff;
+}
+
+// --color-Lime-Green: hsl(136, 65%, 51%);
+// --color-Bright-Cyan: hsl(192, 70%, 51%);
