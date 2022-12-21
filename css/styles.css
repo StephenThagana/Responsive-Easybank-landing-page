@@ -25,7 +25,7 @@ body {
 
 .container {
   max-width: 144rem;
-  padding: 0 15rem;
+  padding: 0 14rem;
   margin: 0 auto; }
 
 .main__grid {
@@ -52,15 +52,27 @@ body {
   font-family: var(--font-family-default);
   font-size: var(--font-size-default);
   font-weight: 400;
-  line-height: 1.7; }
+  line-height: 1.7;
+  background-color: var(--color-neutral-Very-Light-Gray); }
 
-.heading-primary {
-  font-size: 4.8rem;
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
   font-weight: 700;
   display: block;
   line-height: 1;
   letter-spacing: 1px;
   color: var(--color-Dark-Blue); }
+
+.heading-primary {
+  font-size: 4.8rem; }
+
+.heading-secondary {
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem; }
+
+.heading-tertiary {
+  font-size: 1.8rem; }
 
 .btn__link:link,
 .btn__link:visited {
@@ -82,8 +94,32 @@ body {
   background-color: red;
   color: #ffff; }
 
+.header__box {
+  background-color: var(--color-neutral-White);
+  grid-column: full-start / full-end;
+  height: 8rem; }
+
 .header {
-  background-color: orangered; }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 4.8rem;
+  width: 85%;
+  margin: 0 auto; }
+
+.main__nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem; }
+
+.main__nav-link:link,
+.main__nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-neutral-Grayish-Blue);
+  font-weight: 400;
+  font-size: var(--font-size-default); }
 
 .footer {
   grid-column: full-start / full-end; }
@@ -92,7 +128,6 @@ body {
   grid-column: center-start / center-end; }
 
 .section__home {
-  padding-top: 3rem;
   grid-column: center-start / full-end; }
 
 .home__description {
@@ -118,4 +153,30 @@ body {
   margin: -10rem 0 0 14rem; }
 
 .section__why {
-  grid-column: center-start / center-end; }
+  grid-column: full-start / full-end;
+  background-color: var(--color-neutral-Light-Grayish-Blue);
+  padding: 4.8rem 0 4.8rem 0;
+  margin-top: -5rem;
+  z-index: -1;
+  position: relative; }
+
+.why__description {
+  font-size: var(--font-size-default);
+  color: var(--color-neutral-Grayish-Blue);
+  max-width: 65%;
+  margin-bottom: 4.8rem; }
+
+.why__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.8rem; }
+
+.why-img {
+  width: 4.25rem;
+  height: 4.25rem; }
+
+.why-text {
+  color: var(--color-neutral-Grayish-Blue);
+  font-size: 1.3rem;
+  line-height: 1.8; }

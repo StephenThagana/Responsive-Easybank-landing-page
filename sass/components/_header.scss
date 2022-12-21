@@ -1,3 +1,31 @@
+.header__box {
+  background-color: var(--color-neutral-White);
+  grid-column: full-start / full-end;
+  height: 8rem;
+}
+
 .header {
-  background-color: orangered;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 4.8rem;
+
+  width: 85%;
+  margin: 0 auto;
+}
+
+.main__nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main__nav-link:link,
+.main__nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-neutral-Grayish-Blue);
+  font-weight: 400;
+  font-size: var(--font-size-default);
 }

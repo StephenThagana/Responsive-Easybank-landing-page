@@ -3,13 +3,25 @@ body {
   font-size: var(--font-size-default);
   font-weight: 400;
   line-height: 1.7;
-  background-color: var(--color-neutral-Light-Grayish-Blue);
+  background-color: var(--color-neutral-Very-Light-Gray);
 }
-.heading-primary {
-  font-size: 4.8rem;
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
   font-weight: 700;
   display: block;
   line-height: 1;
   letter-spacing: 1px;
   color: var(--color-Dark-Blue);
+}
+
+.heading-primary {
+  font-size: 4.8rem;
+}
+.heading-secondary {
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+}
+.heading-tertiary {
+  font-size: 1.8rem;
 }
