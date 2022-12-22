@@ -5,10 +5,16 @@
   margin-top: -5rem;
   z-index: -1;
   position: relative;
+  @include respond(phone) {
+    margin-top: 0;
+  }
 }
 .why {
   @include respond(mid-tab-port) {
     grid-template-columns: repeat(2, 1fr);
+  }
+  @include respond(phone) {
+    grid-template-columns: 1fr;
   }
 }
 .why__description {
@@ -25,6 +31,9 @@
   flex-direction: column;
   justify-content: center;
   gap: 1.8rem;
+  @include respond(phone) {
+    align-items: center;
+  }
 }
 .why-img {
   width: 4.25rem;

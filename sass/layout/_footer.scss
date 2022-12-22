@@ -23,6 +23,11 @@
       flex: 0 0 100%;
       gap: 6rem;
     }
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.2rem;
+    }
   }
 }
 .social__img {
@@ -43,6 +48,10 @@
   gap: 1.2rem;
   align-items: flex-start;
   list-style: none;
+
+  @include respond(phone) {
+    align-items: center;
+  }
 }
 .footer__btn {
   display: flex;
