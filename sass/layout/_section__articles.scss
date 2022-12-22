@@ -11,19 +11,40 @@
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1.2rem;
+
+  @include respond(mid-tab-port) {
+    padding: 0 2.2rem;
+  }
+}
+.article__box {
+  @include respond(mid-tab-port) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4.8rem;
+  }
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
 }
 .article__img-box {
   flex: 0 0 40%;
+
+  @include respond(tab-port) {
+    overflow: hidden;
+    flex: 0 0 50%;
+  }
 }
 .article {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   display: flex;
-
   flex-direction: column;
   border-radius: 11px;
   overflow: hidden;
 
+  // @include respond(phone) {
+  //   flex-direction: row;
+  // }
   &-img {
     width: 100%;
     height: 100%;

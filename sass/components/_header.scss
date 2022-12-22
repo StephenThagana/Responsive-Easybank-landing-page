@@ -12,6 +12,26 @@
 
   width: 85%;
   margin: 0 auto;
+  @include respond(tab-port) {
+    width: 100%;
+  }
+}
+.main__nav-item {
+  position: relative;
+}
+.main__nav-item::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 1.2px;
+  background-color: var(--color-Lime-Green);
+  transform: scalex(0);
+  transition: transform 0.2s 0.2s;
+}
+.main__nav-item:hover::before {
+  transform: scalex(1);
 }
 
 .main__nav-list {
@@ -28,4 +48,10 @@
   color: var(--color-neutral-Grayish-Blue);
   font-weight: 400;
   font-size: var(--font-size-default);
+  transition: all 0.3s;
+}
+
+.main__nav-link:hover,
+.main__nav-linka:active {
+  color: var(--color-Dark-Blue);
 }

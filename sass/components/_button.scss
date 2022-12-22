@@ -20,8 +20,7 @@
 
 .btn--full:hover,
 .btn--full:active {
-  background-color: red;
-  color: #ffff;
+  filter: grayscale(50%);
 }
 
 // --color-Lime-Green: hsl(136, 65%, 51%);

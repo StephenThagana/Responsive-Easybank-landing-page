@@ -1,7 +1,14 @@
 .section__home {
   grid-column: center-start / full-end;
+
+  @include respond(low-tab-port) {
+    grid-column: full-start / full-end;
+  }
 }
 .home {
+  @include respond(low-tab-port) {
+    grid-template-columns: 1fr;
+  }
   &__description {
     padding: 4.8rem 0;
     display: flex;
@@ -10,6 +17,13 @@
     flex-direction: column;
     gap: 3.2rem;
 
+    @include respond(low-tab-port) {
+      grid-row: 2 / 3;
+      padding: 4.8rem 6rem;
+    }
+    @include respond(sm-phone) {
+      align-items: center;
+    }
     &-text {
       font-size: 1.8rem;
       color: var(--color-neutral-Grayish-Blue);
@@ -21,10 +35,27 @@
     background-position: bottom;
     margin: 0 -27rem 0 0;
     overflow: hidden;
+
+    @include respond(low-tab-port) {
+      grid-row: 1 / 2;
+      background-size: auto;
+    }
+
+    @include respond(phone) {
+      margin: 3px -53rem -49px -324px;
+    }
   }
 }
 
 .home__img {
   width: 60%;
   margin: -10rem 0 0 14rem;
+
+  @include respond(low-tab-port) {
+    margin: -25rem 0 0 14rem;
+  }
+  @include respond(phone) {
+    margin: -14rem 0 0 43rem;
+    width: 29%;
+  }
 }

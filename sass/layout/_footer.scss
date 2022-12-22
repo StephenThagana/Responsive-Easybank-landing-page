@@ -6,26 +6,36 @@
 .content {
   display: flex;
   justify-content: space-between;
+
+  @include respond(mid-tab-port) {
+    flex-wrap: wrap;
+    gap: 5.2rem;
+    justify-content: center;
+  }
+
   &__box {
     // grid-column: 1 / span 2;
     display: flex;
     gap: 11rem;
     justify-content: space-between;
-  }
-  &__footer {
-  }
-  &__item {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
+
+    @include respond(mid-tab-port) {
+      flex: 0 0 100%;
+      gap: 6rem;
+    }
   }
 }
 .social__img {
   width: 2.25rem;
   height: 2.25rem;
 }
+
 .footer__img {
   filter: brightness(4.5);
+
+  // @include respond(phone) {
+  //   flex: 0 0 40%;
+  // }
 }
 .footer--list {
   display: flex;
@@ -37,8 +47,17 @@
 .footer__btn {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
+
+  @include respond(mid-tab-port) {
+    gap: 3.2rem;
+  }
 }
 .footer__text {
   color: var(--color-neutral-Grayish-Blue);
+}
+.footer--link:hover,
+.footer--link:active {
+  color: var(--color-Lime-Green);
 }
