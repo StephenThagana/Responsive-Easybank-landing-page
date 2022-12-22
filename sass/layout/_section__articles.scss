@@ -19,7 +19,7 @@
 .article {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   display: flex;
-  align-items: stretch;
+
   flex-direction: column;
   border-radius: 11px;
   overflow: hidden;
@@ -36,7 +36,6 @@
   &-text {
     color: var(--color-neutral-Grayish-Blue);
     font-size: 1.3rem;
-    line-height: 1.8;
   }
 }
 
