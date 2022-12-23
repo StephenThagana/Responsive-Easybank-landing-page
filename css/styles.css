@@ -50,7 +50,7 @@ body {
   z-index: 999; }
 
 .sticky .section__home {
-  padding-top: 6.5rem; }
+  margin-top: 6.5rem; }
 
 .hidden {
   transition: transform 1s, opacity 1s; }
