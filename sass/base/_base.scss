@@ -25,7 +25,23 @@ html {
 }
 body {
   box-sizing: border-box;
-  overflow-x: hidden;
+  // overflow-x: hidden;
+}
+.sticky .header {
+  position: fixed;
+  background-color: var(--color-neutral-White);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  z-index: 999;
+}
+.sticky .section__home {
+  padding-top: 6.5rem;
+}
+.hidden {
+  transition: transform 1s, opacity 1s;
+}
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
 .container {
   max-width: 144rem;
