@@ -1,9 +1,13 @@
+"use scripts";
+
 const btnScrollTo = document.querySelector(".btn__link");
 const footerEl = document.querySelector("#footer");
 const navList = document.querySelector(".main__nav-list");
 const headerEl = document.querySelector(".header");
 const sectionhome = document.querySelector(".section__home");
 const bodyEl = document.querySelector("body");
+const btnNav = document.querySelector(".btn__mobile-nav");
+
 ///////////////////////////////////
 // BUTTON SCROLLING
 btnScrollTo.addEventListener("click", function (e) {
@@ -48,6 +52,12 @@ const handleHover = function (e) {
 
 headerEl.addEventListener("mouseover", handleHover.bind(0.5));
 headerEl.addEventListener("mouseout", handleHover.bind(1));
+
+///////////////////////////////////////////////
+//make mobile navigation work
+btnNav.addEventListener("click", function (e) {
+  headerEl.classList.toggle("nav-open");
+});
 
 ///////////////////////////////////////////////
 //STICKY NAVIGATION: intersecrion observer api
